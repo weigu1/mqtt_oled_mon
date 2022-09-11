@@ -463,7 +463,7 @@ void oled_print_bat_screen(SSD1322_I2C oled) {
     display_double_4_digits(oled, 7, 1, mqtt_data[3]);
   }  
   if (mqtt_flag[2]) { // W
-    display_int_4_digits(oled, 14, 1, mqtt_data[2]);    
+    display_int_4_digits(oled, 14, 1, mqtt_data[1]);    
   }  
   for (byte i=0; i<4; i++) {
     mqtt_flag[i] = 0;
